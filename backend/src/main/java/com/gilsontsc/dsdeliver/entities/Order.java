@@ -94,6 +94,13 @@ public class Order implements Serializable{
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
+	
+	public Double getTotal() {
+		return products
+				.stream()
+				.mapToDouble(product -> product.getPrice())
+				.sum();
+	}
 
 	public Set<Product> getProducts() {
 		return products;
