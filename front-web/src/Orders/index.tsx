@@ -10,7 +10,6 @@ import OrderLocation from './OrderLocation';
 import OrderSummary from './OrderSummary';
 import Footer from '../Footer';
 import { checkIsSelected } from './helpers';
-import { isTemplateTail } from 'typescript';
 
 function Orders(){
     const [products, setProducts] = useState<Product[]>([]);
